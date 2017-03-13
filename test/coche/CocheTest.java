@@ -28,9 +28,9 @@ public class CocheTest {
     @After
     public void despues(){ System.out.println("después");}
     /**
-* Test para el método Comprar. Si el método comprar es correcto la prueba debe
+* Test para el método Comprar. Si el método adquirir es correcto la prueba debe
 ser exitosa.
-* Vamos a comprobar si partiendo de un stock de 300 coches si compro 100 coches
+ Vamos a comprobar si partiendo de un stock de 300 coches si compro 100 coches
 más el stock es 400. Si es asi el resultado es correcto.
 * @throws java.lang.Exception
 */
@@ -39,15 +39,15 @@ public void testComprar1() throws Exception {
 System.out.println("Test de prueba para Comprar un número positivo de coches");
 int cantidad = 100;
 //Coche coche1 = new Coche("Ford",12000,300);
-coche1.comprar(cantidad);
+coche1.adquirir(cantidad);
 assertTrue(coche1.obtenerStock()==400); /* Como parto de un stock de 300
-al comprar 100 coches más ahora el stock es de 400 */
+al adquirir 100 coches más ahora el stock es de 400 */
 }
 
 /**
-* Test para el método Comprar. En esta prueba intento comprar una cantidad
+* Test para el método Comprar. En esta prueba intento adquirir una cantidad
 negativa de coches. Debe saltar la excepción. Con esta prueba comprobamos que 
-el método comprar no acepta números negativos.
+el método adquirir no acepta números negativos.
 * @throws java.lang.Exception
 */
 @Test
@@ -56,7 +56,7 @@ System.out.println("Test de prueba para Comprar un número negativo de coches");
 int cantidad = -100;
 //Coche coche1 = new Coche("Ford",12000,300);
 try {
-coche1.comprar(cantidad);
+coche1.adquirir(cantidad);
 fail("Intento de comprar un número negativo de coches");
 }
 catch (Exception e){
@@ -84,7 +84,7 @@ int cantidad = 200;
 //Coche coche1 = new Coche("Ford",12000,300);
 coche1.vender(cantidad);
 assertTrue(coche1.obtenerStock()==100); /* Como parto de un stock de 300
-al comprar 100 coches más ahora el stock es de 400 */
+al adquirir 100 coches más ahora el stock es de 400 */
 }
 
 /**

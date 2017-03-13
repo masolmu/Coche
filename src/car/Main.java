@@ -29,7 +29,7 @@ public class Main {
         try
         {
             System.out.println("Compra de Coches");
-            miCoche.comprar(500);
+            miCoche.adquirir(500);
         } catch (Exception e)
         {
             System.out.print("Fallo al ingresar " + e);
