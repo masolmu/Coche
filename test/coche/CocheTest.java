@@ -5,6 +5,7 @@
  */
 package coche;
 
+import car.Coche;
 import static junit.framework.TestCase.assertTrue;
 import static junit.framework.TestCase.fail;
 import org.junit.After;
