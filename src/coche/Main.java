@@ -11,7 +11,13 @@ public class Main {
         int stockActual;
         
         miCoche = new Coche("Opel",12000,500);
-        try 
+        accionesCoche(miCoche); 
+        stockActual = miCoche.obtenerStock();
+        System.out.println("El stock actual es "+ stockActual );
+    }
+
+    public static void accionesCoche(Coche miCoche) {
+        try
         {
             System.out.println("Venta de Coches");
             miCoche.vender(300);
@@ -28,8 +34,6 @@ public class Main {
         {
             System.out.print("Fallo al ingresar " + e);
         }
-        stockActual = miCoche.obtenerStock();
-        System.out.println("El stock actual es "+ stockActual );
     }
 
 }
