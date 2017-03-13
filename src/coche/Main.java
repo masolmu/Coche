@@ -7,10 +7,10 @@ package coche;
 public class Main {
     
       public static void main(String[] args) {
-        Car miCoche;
+        Coche miCoche;
         int stockActual;
         
-        miCoche = new Car("Opel",12000,500);
+        miCoche = new Coche("Opel",12000,500);
         try 
         {
             System.out.println("Venta de Coches");

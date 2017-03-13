@@ -4,7 +4,7 @@ package coche;
  *
  * @author Sonia
  */
-public class Car {
+public class Coche {
 
     private String nombre;
     private double precio;
@@ -12,13 +12,13 @@ public class Car {
     private int stock;
 
     /* Constructor sin argumentos */
-    public Car ()
+    public Coche ()
     {
     }
     // Constructor con parámetro para iniciar todas las propiedades de la clase
     // coche
     
-    public Car (String nom, double precio, int stock)
+    public Coche (String nom, double precio, int stock)
     {
         this.nombre =nom;
         this.precio=precio;
