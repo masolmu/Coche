@@ -3,22 +3,25 @@ package coche;
 /**
  *
  * @author Sonia
+ * @version 1
+ * @since 9/03/2017
  */
-public class Coche implements NewInterface {
+public class Auto implements NewInterface {
 
     private String nombre;
     private double precio;
     private double precioIVA;
     private int stock;
 
-    /* Constructor sin argumentos */
-    public Coche ()
+    /** Constructor sin argumentos
+     */
+    public Auto ()
     {
     }
-    /** Constructor con parámetro para iniciar todas las propiedades de la clase
+    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase
      coche */
     
-    public Coche (String nom, double precio, int stock)
+    public Auto (String nom, double precio, int stock)
     {
         this.nombre =nom;
         this.precio=precio;
