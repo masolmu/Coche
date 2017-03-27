@@ -10,7 +10,7 @@ public class Main {
         Bolido miCoche;
         int stockActual;
         
-        miCoche = compraventacoche();
+        miCoche = concesionarioVentas();
         stockActual = miCoche.cochesQuedan();
         System.out.println("El stock actual es "+ stockActual );
     }
@@ -23,23 +23,23 @@ public class Main {
  comprar y vender de la clase Bolido, con objeto de verificar
  su funcionamiento
        */
-      public static Bolido compraventacoche() {
-            Bolido miCoche;
-            miCoche = new Bolido("Opel",12000,500);
+      public static Bolido concesionarioVentas() {
+            Bolido miAuto;
+            miAuto = new Bolido("Opel",12000,500);
             try            {
                   System.out.println("Venta de Coches");
-                  miCoche.vender(300);
+                  miAuto.vender(300);
             } catch (Exception e)
             {
                   System.out.print("Fallo al vender " + e);
             }   try
             {
                   System.out.println("Compra de Coches");
-                  miCoche.comprar(500);
+                  miAuto.comprar(500);
             } catch (Exception e)
             {
                   System.out.print("Fallo al ingresar " + e);
-            }   return miCoche;
+            }   return miAuto;
       }
 
 }
