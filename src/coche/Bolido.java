@@ -6,7 +6,7 @@ package coche;
  * @version 1
  * @since 9/03/2017
  */
-public class Auto implements NewInterface {
+public class Bolido implements NewInterface {
 
     private String nombre;
     private double precio;
@@ -15,13 +15,13 @@ public class Auto implements NewInterface {
 
     /** Constructor sin argumentos
      */
-    public Auto ()
+    public Bolido ()
     {
     }
-    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase
+    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase    /** Constructor con parámetro para iniciar todas las propiedades de la clase
      coche */
     
-    public Auto (String nom, double precio, int stock)
+    public Bolido (String nom, double precio, int stock)
     {
         this.nombre =nom;
         this.precio=precio;

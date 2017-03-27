@@ -7,7 +7,7 @@ package coche;
 public class Main {
     
       public static void main(String[] args) {
-        Auto miCoche;
+        Bolido miCoche;
         int stockActual;
         
         miCoche = compraventacoche();
@@ -20,12 +20,12 @@ public class Main {
       
       /**
        * Método en el que se incluyen las llamadas a los métodos 
- comprar y vender de la clase Auto, con objeto de verificar
+ comprar y vender de la clase Bolido, con objeto de verificar
  su funcionamiento
        */
-      public static Auto compraventacoche() {
-            Auto miCoche;
-            miCoche = new Auto("Opel",12000,500);
+      public static Bolido compraventacoche() {
+            Bolido miCoche;
+            miCoche = new Bolido("Opel",12000,500);
             try            {
                   System.out.println("Venta de Coches");
                   miCoche.vender(300);
